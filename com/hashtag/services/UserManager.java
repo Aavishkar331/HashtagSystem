@@ -1,10 +1,10 @@
 package com.hashtag.services;
 
+import com.hashtag.entities.Post;
+import com.hashtag.entities.User;
 import com.hashtag.exceptions.DuplicateUserException;
 import com.hashtag.exceptions.UserNotFoundException;
 import com.hashtag.interfaces.Searchable;
-import com.hashtag.models.Post;
-import com.hashtag.models.User;
 import com.hashtag.utils.FileHandler;
 
 import java.io.IOException;

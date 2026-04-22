@@ -1,11 +1,11 @@
 package com.hashtag;
 
+import com.hashtag.entities.Hashtag;
+import com.hashtag.entities.Post;
+import com.hashtag.entities.User;
 import com.hashtag.exceptions.DuplicateUserException;
 import com.hashtag.exceptions.InvalidPostException;
 import com.hashtag.exceptions.UserNotFoundException;
-import com.hashtag.models.Hashtag;
-import com.hashtag.models.Post;
-import com.hashtag.models.User;
 import com.hashtag.services.HashtagTrackingSystem;
 import com.hashtag.services.TrendingAnalyzer;
 import com.hashtag.services.UserManager;
@@ -97,7 +97,7 @@ public class Main {
         System.out.println("\n-- Register --");
         String username = readString("Username: ");
         String email = readString("Email: ");
-        String password = readString("Password: ");
+        String password = readPasswordString("Password: ");
 
         try {
             User user = new User(username, email, password);
@@ -111,7 +111,7 @@ public class Main {
     private static void login() {
         System.out.println("\n-- Login --");
         String username = readString("Username: ");
-        String password = readString("Password: ");
+        String password = readPasswordString("Password: ");
 
         try {
             User user = userManager.loginUser(username, password);
@@ -293,6 +293,13 @@ public class Main {
     private static String readString(String prompt) {
         System.out.print(prompt);
         return scanner.nextLine().trim();
+    }
+
+    private static String readPasswordString(String prompt)
+    {
+        System.out.print(prompt);
+        String s = new String(System.console().readPassword()).trim();
+        return s;
     }
 
     private static Integer readInt(String prompt) {

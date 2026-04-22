@@ -1,8 +1,8 @@
 package com.hashtag.services;
 
+import com.hashtag.entities.Hashtag;
+import com.hashtag.entities.Post;
 import com.hashtag.interfaces.Reportable;
-import com.hashtag.models.Hashtag;
-import com.hashtag.models.Post;
 
 import java.util.ArrayList;
 import java.util.List;

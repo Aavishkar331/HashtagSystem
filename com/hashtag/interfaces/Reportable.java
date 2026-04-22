@@ -1,9 +1,10 @@
 package com.hashtag.interfaces;
 
 
-import com.hashtag.models.Hashtag;
-import com.hashtag.models.Post;
 import java.util.List;
+
+import com.hashtag.entities.Hashtag;
+import com.hashtag.entities.Post;
 
 public interface Reportable {
     List<Hashtag> getTrending(int topN);

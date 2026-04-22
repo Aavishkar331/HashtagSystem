@@ -1,12 +1,12 @@
 package com.hashtag.utils;
 
-import com.hashtag.models.User;
-import com.hashtag.models.Post;
-import com.hashtag.models.Hashtag;
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+
+import com.hashtag.entities.Hashtag;
+import com.hashtag.entities.Post;
+import com.hashtag.entities.User;
 
 public class FileHandler {
 

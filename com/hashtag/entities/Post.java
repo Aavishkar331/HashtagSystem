@@ -1,4 +1,4 @@
-package com.hashtag.models;
+package com.hashtag.entities;
 
 import java.util.ArrayList;
 import java.util.List;

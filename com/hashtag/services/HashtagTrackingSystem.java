@@ -1,11 +1,11 @@
 package com.hashtag.services;
 
+import com.hashtag.entities.Hashtag;
+import com.hashtag.entities.Post;
+import com.hashtag.entities.User;
 import com.hashtag.exceptions.InvalidPostException;
 import com.hashtag.exceptions.UserNotFoundException;
 import com.hashtag.interfaces.Searchable;
-import com.hashtag.models.Hashtag;
-import com.hashtag.models.Post;
-import com.hashtag.models.User;
 import com.hashtag.utils.FileHandler;
 import com.hashtag.utils.HashtagExtractor;
 

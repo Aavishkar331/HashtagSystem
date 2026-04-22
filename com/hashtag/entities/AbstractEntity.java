@@ -1,4 +1,4 @@
-package com.hashtag.models;
+package com.hashtag.entities;
 
 import java.time.LocalDateTime;
 

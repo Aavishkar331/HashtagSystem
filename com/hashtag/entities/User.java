@@ -1,4 +1,4 @@
-package com.hashtag.models;
+package com.hashtag.entities;
 
 public class User extends AbstractEntity{
     
